@@ -1,0 +1,80 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat matDialogContent>
+    <form [formGroup]="loginForm" (ngSubmit) = "loginUser()">
+        <mat-form-field appearance="outline">
+            <mat-label>User Name</mat-label>
+            <input formControlName="user" matInput placeholder="username">
+            <span  style="color: red;"*ngIf="user && user.invalid && user.touched && user.errors">This Input is not valid </span>
+        </mat-form-field>  
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input formControlName="password" type='password'  matInput placeholder="password">
+            <span  style="color: red;" *ngIf="email && email.errors && email.touched && email.errors['required']">email is required</span>
+            <span  style="color: red;" *ngIf="email && email.errors && email.touched && email.errors['email']">email is not valid</span>
+        </mat-form-field> 
+
+
+        <mat-form-field appearance="outline">
+            <mat-label>Email Address</mat-label>
+            <input formControlName="email" matInput placeholder="Email">
+        <span  style="color: red;" *ngIf="email && email.errors && email.touched && email.errors['required']">email is required</span>
+        <span  style="color: red;" *ngIf="email && email.errors && email.touched && email.errors['email']">email is not valid</span>
+    </mat-form-field>
+    </form>
+
+
+  <form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Product Name</mat-label>
+        <input formControlName="productName" matInput placeholder="Name">
+    </mat-form-field>
+    <span  style="color: blueviolet;" *ngIf="productName && productName.invalid && productName.touched">This Input is not valid </span>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Product Category</mat-label>
+        <mat-select formControlName="category" placeholder="category">
+            <mat-option value="Fruits">Fruits</mat-option>
+            <mat-option value="Vegetables">Vegetables</mat-option>
+            <mat-option value="Dairy">Dairy</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+
+    <mat-form-field appearance="outline">
+        <mat-label>Choose a date</mat-label>
+        <input formControlName="date" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <label for="">
+        <h1>Diet</h1>
+    </label>
+    <mat-radio-group formControlName="freshness" class="example-radio-group">
+        <mat-radio-button class="example-radio-button" *ngFor="let diet of freshnessList" [value]="diet">
+            {{diet}}
+        </mat-radio-button>
+    </mat-radio-group>
+
+
+    <mat-form-field appearance="outline">
+        <mat-label>Price</mat-label>
+        <input formControlName="price" matInput type="number" placeholder="Price">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Comment</mat-label>
+        <textarea formControlName="comment" matInput></textarea>
+        
+    </mat-form-field>
+    <span  style="color: red;"*ngIf="comment && comment.invalid && comment.touched">This Input is not valid </span>
+  </form>
+
+    <div mat-dialog-action [align]="'End'">
+        <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+        <button style="margin-left: 8px;"mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+    </div>
+    
+
+</div>

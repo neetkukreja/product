@@ -1,0 +1,68 @@
+{
+  "productList": [
+    {
+      "productName": "Apple",
+      "category": "Fruits",
+      "date": "2022-04-20T18:30:00.000Z",
+      "freshness": "Breakfast",
+      "price": 15,
+      "Comment": "Fresh Apple",
+      "id": 1
+    },
+    {
+      "productName": "Carrot",
+      "category": "Vegetables",
+      "date": "2022-04-20T18:30:00.000Z",
+      "freshness": "Lunch",
+      "price": 55,
+      "Comment": "per kg",
+      "id": 2
+    },
+    {
+      "productName": "Apple",
+      "category": "Fruits",
+      "date": "2022-04-14T18:30:00.000Z",
+      "freshness": "Lunch",
+      "price": 15,
+      "Comment": "",
+      "id": 3
+    },
+    {
+      "productName": "aPPLE",
+      "category": "Vegetables",
+      "date": "2022-04-20T18:30:00.000Z",
+      "freshness": "Breakfast",
+      "price": 43,
+      "Comment": "",
+      "id": 4
+    },
+    {
+      "productName": "Apple",
+      "category": "Vegetables",
+      "date": "2022-04-14T18:30:00.000Z",
+      "freshness": "Lunch",
+      "price": 45,
+      "Comment": "",
+      "id": 5
+    },
+    {
+      "productName": "aPPLE",
+      "category": "Vegetables",
+      "date": "2022-04-12T18:30:00.000Z",
+      "freshness": "Breakfast",
+      "price": 50,
+      "Comment": "",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "productList": [
+    {
+      "productName": "Carrot",
+      "category": "Vegetables",
+      "date": "2022-04-20T18:30:00.000Z",
+      "freshness": "Breakfast",
+      "price": 55,
+      "comment": "nb,jhjh",
+      "id": 2
+    },
+    {
+      "productName": "Apple",
+      "category": "Fruits",
+      "date": "2022-04-14T18:30:00.000Z",
+      "freshness": "Breakfast",
+      "price": 15,
+      "comment": "good",
+      "id": 3
+    },
+    {
+      "productName": "Apple",
+      "category": "Vegetables",
+      "date": "2022-04-14T18:30:00.000Z",
+      "freshness": "Lunch",
+      "price": 45,
+      "comment": "gulglgjljl",
+      "id": 5
+    },
+    {
+      "productName": "Apple",
+      "category": "Vegetables",
+      "date": "2022-04-12T18:30:00.000Z",
+      "freshness": "Breakfast",
+      "price": 125,
+      "comment": "ghjj",
+      "id": 6
+    },
+    {
+      "productName": "aPPLE",
+      "category": "Vegetables",
+      "date": "2022-04-12T18:30:00.000Z",
+      "freshness": "Breakfast",
+      "price": 3,
+      "comment": "fdfdfd",
+      "id": 7
+    },
+    {
+      "productName": "Mango",
+      "category": "Fruits",
+      "date": "2022-04-14T18:30:00.000Z",
+      "freshness": "Breakfast",
+      "price": 123,
+      "comment": "fdfw",
+      "id": 8
+    },
+    {
+      "productName": "gegegt",
+      "category": "Dairy",
+      "date": "2022-04-22T18:30:00.000Z",
+      "freshness": "Lunch",
+      "price": 12,
+      "comment": "gg",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
