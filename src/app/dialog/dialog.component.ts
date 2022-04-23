@@ -18,7 +18,7 @@ export class DialogComponent implements OnInit {
 
   loginForm= this.formBuilder.group({
     user: ['', Validators.required],
-    password: ['',Validators.required,Validators.email],
+    password: ['',Validators.required],
     email: ['', [Validators.required,Validators.email]],
 
     });
