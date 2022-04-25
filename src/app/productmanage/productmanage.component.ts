@@ -6,7 +6,8 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { FormGroup } from '@angular/forms';
-
+import {UsersserviceService} from '../shared/usersservice.service';
+import { dietdata } from '../shared/diet-mock';
 
 
 @Component({
@@ -22,12 +23,16 @@ export class ProductmanageComponent implements OnInit {
   @ViewChild(MatSort) sort !: MatSort;
  
 
+
+
   ngOnInit(): void {
     this.getAllProducts();
   }
 
 
-  constructor(private dialog: MatDialog, private api: ApiService) { }
+  constructor(private dialog: MatDialog, private api: ApiService, private userService: UsersserviceService) {
+   
+   }
 
 
 
@@ -45,6 +50,7 @@ export class ProductmanageComponent implements OnInit {
     this.api.getProduct()
       .subscribe({
         next: (res) => {
+          debugger
           this.dataSource = new MatTableDataSource(res);
           this.dataSource.paginator = this.paginator;
           this.dataSource.sort = this.sort
