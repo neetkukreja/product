@@ -21,6 +21,11 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import { UserdialogComponent } from './userdialog/userdialog.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { ArrayassignmentComponent } from './arrayassignment/arrayassignment.component';
+import { BootStrapComponent } from './boot-strap/boot-strap.component';
+
 
 
 
@@ -30,7 +35,10 @@ import {MatSortModule} from '@angular/material/sort';
     AppComponent,
     ProductmanageComponent,
     DialogComponent,
-    
+    UserdialogComponent,
+    UserDetailsComponent,
+    ArrayassignmentComponent,
+    BootStrapComponent,
   ],
   imports: [
     BrowserModule,

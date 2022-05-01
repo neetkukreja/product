@@ -1,0 +1,54 @@
+<h1>Question0 : Simple reverse</h1>
+<p>{{answer0}}</p>
+<hr>
+
+<h1> Question3: Create a new array of objects from the following data which only contains one property called 'name'
+    where name = firstName + ' ' + lastName :
+    Input: </h1>
+<ul>
+    <li *ngFor="let user of answer3">
+        {{user.firstName}} {{user.lastName}}</li>
+</ul>
+<hr>
+
+3C. Print "details": "Person 53 has deposit $290.20 on 7/27/2020"
+<ul>
+    <li *ngFor="let transaction of transactions1">
+        Person {{transaction.id}} has {{transaction.type}} {{transaction.amount}} on {{transaction.date}}</li>
+</ul>
+<hr>
+
+5. Write a function called getCarsMadeAfterYear(year) which will take year as a parameter and return all the cars
+(objects) made after the value specified in the parameter year.
+
+<ul *ngFor="let car of answer5b">
+    <li>
+        {{car.carMakeYear}}
+    </li>
+</ul>
+<hr>
+
+6. Output: Transactions having type is 'Deposit'
+<ul *ngFor="let person of answer6a">
+    <li>
+        {{person.id}}  {{person.type}}  {{person.date}} {{person.amount}}
+    </li>
+</ul>
+<hr>
+7. 
+7. Find all the transactions made in the month of Feb.
+<ul *ngFor="let month of answer7">
+    <li>
+        {{month.date}}
+    </li>
+</ul>
+<!-- <h1> Question1: reverse array</h1>
+<p> {{ answer1 }} </p>
+
+<hr>
+
+<h1> Question2: Sort an array of objects by it's 'name' property: </h1>
+<ul>
+    <li *ngFor="let user of answer2">
+        {{ user.name }} </li>
+</ul> -->

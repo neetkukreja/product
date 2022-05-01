@@ -11,6 +11,7 @@ export class ApiService {
     return this.http.post<any>("http://localhost:3000/productList/",data)
   }
   getProduct (){
+    debugger
     return this.http.get<any>("http://localhost:3000/productList/")
   }
   putProduct(data:any,id : number) {
