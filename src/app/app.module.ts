@@ -23,6 +23,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import { UserdialogComponent } from './userdialog/userdialog.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { ArrayassignmentComponent } from './arrayassignment/arrayassignment.component';
+import { BootStrapComponent } from './boot-strap/boot-strap.component';
 
 
 
@@ -35,6 +37,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     DialogComponent,
     UserdialogComponent,
     UserDetailsComponent,
+    ArrayassignmentComponent,
+    BootStrapComponent,
   ],
   imports: [
     BrowserModule,
